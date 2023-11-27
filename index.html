@@ -3,22 +3,68 @@
   <head>
     <title>mui's corner !</title>
     <meta charset="utf-8">
+    <!--font import-->
+    <link rel="stylesheet" href="https://use.typekit.net/yourfontkitid.css">
     <style>
+       @media screen {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
       header {
+        color: white;
         background-color: #e1d6ea;
+   			font-family: "Nanum Pen Script";
+				font-weight: lighter;
+        font-size: 30px;
         width: 100%;
         padding: 10px;
         text-align: left;
+        display: flex;
+        align-items: center;
       }
+        header img {
+          margin-left: 10px;
+          margin-right: 20px;
+          width: 80px;      
+        }
       
+      #subpages {
+        align-items: center;
+      }
+     
+      #subpages img{
+				margin-top: 60px;
+        margin-left: 100px;
+        
+      }
+
+        body {
+        color: white;
+        background-color: #fff2e2;
+        background-position: center;
+        font-family: Georgia, Times, serif;
+        line-height: 1.4em;
+        margin: 0px;
+      }
     </style>
   </head>
-
+  
+ 
+  
   <body>
- <!--header-->
     <header>
-    <h1>mui's corner</h1>
-</header>
+			<img src="logo.png" alt="small logo">
+			<h1>mui's corner</h1>
+		</header>
+  
+		<div id="subpages">
+      <img src="about the artist.png" alt="about">
+			<img src="gallary.png" alt="gallary">
+      <img src="connect with me.png" alt="connect">
+      <img src="book.png" alt="book">
+    </div>		
     
     <nav>
       <a href="about.html">About the Artist</a>
@@ -26,7 +72,6 @@
       <a href="connect.html">Connect With Me!</a>
       <a href="Book.html">Book An Appointment!</a> 
     </nav>
-    
     
   </body>
 </html>
