@@ -30,7 +30,7 @@
 
       /*copied code ends*/
 
-      header {
+      #header {
         color: white;
         background-color: #e1d6ea;
         font-family: "Nanum Pen Script";
@@ -43,7 +43,7 @@
         align-items: center;
       }
 
-      header img {
+     #header img {
         margin-left: 10px;
         margin-right: 20px;
         width: 80px;
@@ -71,7 +71,6 @@
       }
 
       #create {
-        
         margin-left: 12%;
         text-align: center;
         position: relative;
@@ -79,7 +78,7 @@
         margin: 70px 50px 0 50px;
       }
 
-      .create {
+      #create img {
         width: 100%;
       }
 			
@@ -94,22 +93,54 @@
         margin-right: 60px;
       }
       
+      #bgpic img {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        z-index: -1;
+      }
+      
+      #footer {
+        background-color: #fcfcfc;
+        width: 100%;
+        height: 400px;
+        display: flex;
+      }
+      
+      #footer img {
+        margin-top: 50px;
+        margin-left: 42%;
+        width: 55px;
+        height: 50px;
+      }
+      
+      #footer h1 {
+        color: black;
+        font-family: "Nanum Pen Script";
+        display: flex;
+        margin-top: 55px;
+        margin-left: 2%;
+
+      }
+      
       body {
         color: white;
         background-color: #fff2e2;
         background-position: center;
         font-family: "BMKIRANGHAERANG", Georgia, Times, serif;
         margin: 0;
+        z-index: 2;
       }
       
     </style>
   </head>
 
   <body>
-      <header>
+    <div id="header">
       <img src="logo.png" alt="small logo">
       <h1>mui's corner</h1>
-    </header>
+    </div>
+    
     <div id="subpages">
       <ul class="subpages">
         <li>
@@ -139,5 +170,17 @@
       <div id="blockA"></div> <!-- Background box -->
       <img class="create" src="Create.png" alt="create">
     </div>
+    
+    <div id="bgpic">
+      <img src= "bg pic.png" alt= "bg">
+    </div>
+    
+    <div id="footer">
+      <img src="logo.png" alt="footer logo">
+    	<h1>muis corner</h1>
+    </div>
+    
+    
+    
   </body>
 </html>
