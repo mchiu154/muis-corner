@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <!--font import-->
     <link rel="stylesheet" href="https://use.typekit.net/yourfontkitid.css">
-    <style>
+    
+    <style>   
        @media screen {
         header {
-          flex-direction: column;
+          flex-direction: row;
           text-align: center;
         }
       }
@@ -29,17 +30,22 @@
           margin-right: 20px;
           width: 80px;      
         }
-      
       #subpages {
+        position: relative;
+        display: flex;
         align-items: center;
       }
-     
-      #subpages img{
-				margin-top: 60px;
-        margin-left: 100px;
-        
+
+      .subpage {
+        margin-top: 70px;
+        margin-left: 12%;
+        text-align: center;
       }
 
+      .subpage img {
+        width: 130%;
+        max-width: 100%;
+      }
         body {
         color: white;
         background-color: #fff2e2;
@@ -51,20 +57,30 @@
     </style>
   </head>
   
- 
-  
   <body>
     <header>
 			<img src="logo.png" alt="small logo">
 			<h1>mui's corner</h1>
 		</header>
   
-		<div id="subpages">
-      <img src="about the artist.png" alt="about">
-			<img src="gallary.png" alt="gallary">
-      <img src="connect with me.png" alt="connect">
-      <img src="book.png" alt="book">
-    </div>		
+		 <div id="subpages">
+      <div class="subpage">
+        <img src="about the artist.png" alt="about">
+        <p>About the Artist</p>
+      </div>
+      <div class="subpage">
+        <img src="gallary.png" alt="gallary">
+        <p>Gallary</p>
+      </div>
+      <div class="subpage">
+        <img src="connect with me.png" alt="connect">
+        <p>Connect With Me!</p>
+      </div>
+      <div class="subpage">
+        <img src="book.png" alt="book">
+        <p>Book An Appointment!</p>
+      </div>
+    </div>    		
     
     <nav>
       <a href="about.html">About the Artist</a>
@@ -72,6 +88,5 @@
       <a href="connect.html">Connect With Me!</a>
       <a href="Book.html">Book An Appointment!</a> 
     </nav>
-    
   </body>
 </html>
