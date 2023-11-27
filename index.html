@@ -49,19 +49,20 @@
         width: 80px;
       }
 
-      #subpages {
+      #subpages ul {
         position: relative;
         display: flex;
+        list-style-type: none;
         align-items: center;
       }
 
-      .subpages {
+      #subpages li {
         margin-top: 70px;
-        margin-left: 12%;
+        margin-left: 13%;
         text-align: center;
       }
 
-      .subpages img {
+      #subpages img {
         width: 130%;
         max-width: 100%;
       }
@@ -72,20 +73,19 @@
         text-align: center;
         position: relative;
         z-index: 0;
-        margin-top: 70;
+        margin-top: 70px;
       }
 
       .create {
         width: 100%;
-        min-width: 500px;
       }
 			
       #blockA {
         background-color: #d2cce2;
+      	border-radius: 30px;
         width: 100%;
         height: 100%;
         position: absolute;
-        left: 0;
         z-index: -1;
       }
       
@@ -94,42 +94,43 @@
         background-color: #fff2e2;
         background-position: center;
         font-family: "BMKIRANGHAERANG", Georgia, Times, serif;
-        line-height: 1.4em;
         margin: 0;
-				margin-right: 20px;
+        padding: 0 50px 0 50px;
       }
       
     </style>
   </head>
 
   <body>
-    <header>
+      <header>
       <img src="logo.png" alt="small logo">
       <h1>mui's corner</h1>
     </header>
-
     <div id="subpages">
-      <div class="subpages">
+      <ul class="subpages">
+        <li>
         <a href="about.html">
           <img src="abt artist.png" alt="about">
         </a>
-      </div>
-      <div class="subpages">
+      </li>
+      <li>
         <a href="gallary.html">
           <img src="gallary 2.png" alt="gallary">
         </a>
-      </div>
-      <div class="subpages">
+      </li>
+      <li>
         <a href="connect.html">
           <img src="connect w me.png" alt="connect">
         </a>
-      </div>
-      <div class="subpages">
+      </li>
+      <li>
         <a href="Book.html">
           <img src="booking.png" alt="book">
         </a>
-      </div>
+      </li>
+    </ul>
     </div>
+    
     <div id="create">
       <div id="blockA"></div> <!-- Background box -->
       <img class="create" src="Create.png" alt="create">
