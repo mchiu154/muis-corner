@@ -106,85 +106,91 @@
         height: auto;
         z-index: -1;
       }
-      
- .pricesandquotes {
-  position: absolute;
-  color: black;
-  font-family: "Nanum Pen Script";
-  font-size: 5vw;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-}
 
-.servicenames {
-  position: absolute;
-  color: black;
-  font-family: "Avenir";
-  font-size: 2vw; 
-  top: 17%;
-	left: 17%;
-  margin-left: 2vw; 
-  white-space: nowrap;
-  z-index: 2;
-  line-height: 4vw;
-}
+       .pricesandquotes {
+        position: absolute;
+        color: black;
+        font-family: "Nanum Pen Script";
+        font-size: 5vw;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        white-space: nowrap;
+        z-index: 2;
+      }
 
-.prices {
-  position: absolute;
-  color: black;
-  font-family: "Avenir";
-  font-size: 2vw; 
-  top: 17%;
-  margin-right: 20%;
-  right: 2vw;
-  white-space: nowrap;
-  z-index: 2;
-  line-height: 4vw; 
-}
+      .servicenames {
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 2vw; 
+        top: 17%;
+        left: 17%;
+        margin-left: 2vw; 
+        white-space: nowrap;
+        z-index: 2;
+        line-height: 4vw;
+      }
 
-.additionalcharges {
-  font-style: italic;
-  position: absolute;
-  color: black;
-  font-family: "Avenir";
-  font-size: 2vw; 
-  top: 80%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  white-space: nowrap;
-  z-index: 2;
-  line-height: 4vw; /* Adjust the value as needed */
-}
+      .prices {
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 2vw; 
+        top: 17%;
+        margin-right: 20%;
+        right: 2vw;
+        white-space: nowrap;
+        z-index: 2;
+        line-height: 4vw; 
+      }
 
-      
+      .additionalcharges {
+        font-style: italic;
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 2vw; 
+        top: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: left;
+        white-space: nowrap;
+        z-index: 2;
+        line-height: 4vw;
+      }
+
       #footer {
         background-color: #fcfcfc;
         width: 100%;
         height: 400px;
         display: flex;
+        justify-content: center;
       }
       
       #footer img {
         width: 55px;
         height: 50px;
-        margin-top: 50px;
-        margin-left: 45%;
-   			transform: translateX(-45%);
-       
+        margin-top: 40px;
+        margin-left: 10%;
       }
       
       #footer h1 {
         color: black;
         font-family: "Nanum Pen Script";
         display: flex;
-        margin-top: 55px;
-        left:100%;
-   			transform: translateX(-10%);
+        margin-top: 45px;
+        margin-left: 10px;
+      }
+      
+      #footer p {
+        color: black;
+        font-family: "Big Caslon Medium";
+        display: flex;
+        margin-top: 100px;
+        white-space: nowrap;
+        margin: 0;
       }
       
       body {
@@ -277,6 +283,9 @@
     <div id="footer">
       <img src="logo.png" alt="footer logo">
     	<h1>muis corner</h1>
+      <p> Home <br><br><br><br><br> About Us <br><br><br><br><br> Services <br><br><br><br><br> Connect <br><br><br><br><br> Booking <br>
+        Privacy <br><br><br><br><br> Terms & Policy
+      </p>
     </div>
       
   </body>
