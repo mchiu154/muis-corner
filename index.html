@@ -93,11 +93,22 @@
         margin-right: 60px;
       }
       
+      #bgpic {
+        position: relative;
+      }
+      
       #bgpic img {
         width: 100%;
         height: auto;
         margin-top: 50px;
         z-index: -1;
+      }
+      
+      .pricesandquotes {
+        position: center;
+        colour: black;
+        top: 10%;
+        left: 50%;
       }
       
       #footer {
@@ -120,7 +131,6 @@
         display: flex;
         margin-top: 55px;
         margin-left: 2%;
-
       }
       
       body {
@@ -171,16 +181,16 @@
       <img class="create" src="Create.png" alt="create">
     </div>
     
-    <div id="bgpic">
+    <div class="bgpic">
       <img src= "bg pic.png" alt= "bg">
+      <div class="pricesandquotes">Prices and Quotes</div>
+        
     </div>
     
     <div id="footer">
       <img src="logo.png" alt="footer logo">
     	<h1>muis corner</h1>
     </div>
-    
-    
-    
+      
   </body>
 </html>
