@@ -50,6 +50,8 @@
       }
 
       #subpages ul {
+        margin-top: 0;
+        background-color: #fff2e2;
         position: relative;
         display: flex;
         justify-content: space-evenly;
@@ -93,24 +95,29 @@
         margin-right: 60px;
       }
       
-      #bgpic {
+    	.bgpic {
         position: relative;
+        background-color: white;
+        margin-top: 100px;
       }
       
-      #bgpic img {
+      .bgpic img {
         width: 100%;
         height: auto;
-        margin-top: 50px;
         z-index: -1;
       }
       
-      .pricesandquotes {
-        position: center;
-        colour: black;
+     .pricesandquotes {
+        position: absolute;
+        color: black;
+        font-family: "Nanum Pen Script";
+        font-size: 100px;
         top: 10%;
         left: 50%;
-      }
-      
+        transform: translateX(-50%);
+        text-align: center;
+        z-index: 2;
+}
       #footer {
         background-color: #fcfcfc;
         width: 100%;
@@ -119,10 +126,12 @@
       }
       
       #footer img {
-        margin-top: 50px;
-        margin-left: 42%;
         width: 55px;
         height: 50px;
+        margin-top: 50px;
+        margin-left: 50%;
+   			transform: translateX(-50%);
+       
       }
       
       #footer h1 {
@@ -130,16 +139,16 @@
         font-family: "Nanum Pen Script";
         display: flex;
         margin-top: 55px;
-        margin-left: 2%;
+        left: 100%;
+   			transform: translateX(-25%);
       }
       
       body {
         color: white;
-        background-color: #fff2e2;
+        background-color: #fff2e2; 
         background-position: center;
         font-family: "BMKIRANGHAERANG", Georgia, Times, serif;
         margin: 0;
-        z-index: 2;
       }
       
     </style>
@@ -150,7 +159,8 @@
       <img src="logo.png" alt="small logo">
       <h1>mui's corner</h1>
     </div>
-    
+
+    </div>
     <div id="subpages">
       <ul class="subpages">
         <li>
@@ -184,7 +194,6 @@
     <div class="bgpic">
       <img src= "bg pic.png" alt= "bg">
       <div class="pricesandquotes">Prices and Quotes</div>
-        
     </div>
     
     <div id="footer">
