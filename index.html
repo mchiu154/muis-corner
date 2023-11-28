@@ -112,12 +112,38 @@
         color: black;
         font-family: "Nanum Pen Script";
         font-size: 100px;
-        top: 10%;
+       	top: 10%;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        white-space: nowrap;
         z-index: 2;
-}
+			}
+      
+      .servicenames {
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 40px;
+        top: 30%;
+        text-align: left;
+        margin-left: 10%;
+        white-space: nowrap;
+        z-index: 2;
+      }
+      
+      .prices {
+        position: absolute;
+        color: black;
+        font-family: "Avenir";
+        font-size: 40px;
+        top: 30%;
+        text-align: right;
+				right: 10%;
+        white-space: nowrap;
+        z-index: 2;
+      }
+      
       #footer {
         background-color: #fcfcfc;
         width: 100%;
@@ -129,8 +155,8 @@
         width: 55px;
         height: 50px;
         margin-top: 50px;
-        margin-left: 50%;
-   			transform: translateX(-50%);
+        margin-left: 45%;
+   			transform: translateX(-45%);
        
       }
       
@@ -139,12 +165,12 @@
         font-family: "Nanum Pen Script";
         display: flex;
         margin-top: 55px;
-        left: 100%;
-   			transform: translateX(-25%);
+        left:100%;
+   			transform: translateX(-10%);
       }
       
       body {
-        color: white;
+        color: black;
         background-color: #fff2e2; 
         background-position: center;
         font-family: "BMKIRANGHAERANG", Georgia, Times, serif;
@@ -194,6 +220,30 @@
     <div class="bgpic">
       <img src= "bg pic.png" alt= "bg">
       <div class="pricesandquotes">Prices and Quotes</div>
+      <div class="servicenames">
+        <p>
+          Builder Gel Removal <br>
+          Foreign Builder Gel Removal <br><br>
+          Gel-X Removal <br>
+          Foreign Gel-X Removal <br><br>
+          Builder Gel Overlay (Short) <br>
+          Builder Gel Overlay (Medium) <br>
+          Builder Gel Overlay (Long) <br><br>
+          Gel-X (Short) <br>
+          Gel-X (Medium) <br>
+          Gel-X (long) <br><br><br><br>
+        </p> 
+        <p1 style= >*Additional design will be charged appropriately <br>
+          after initial client consultation</p1>
+      </div>
+      <div class="prices">
+        <p>
+          5 <br>
+          8 <br><br>
+          10<br>
+          13<br><br>
+        </p>
+      </div>
     </div>
     
     <div id="footer">
