@@ -164,7 +164,7 @@
       #footer {
         background-color: #fcfcfc;
         width: 100%;
-        height: 400px;
+        height: auto;
         display: flex;
         flex-direction: column; 
         align-items: center;
@@ -184,26 +184,32 @@
         margin-left: 1vw; 
       }
 
-      #footer p {
+      #footer p span{
         color: black;
         font-size: 3vw;
         font-family: "Big Caslon Medium";
-        margin-top: 1vh;
         white-space: nowrap;
         text-align: center;
         word-spacing: 2vw;
-        margin-left: 3vw;
         margin-right: 3vw;
       }
       
-      #footer p .about {
-        word-spacing: 3vw;
-      }
-      
-      #footer p .terms {
-        word-spacing: 0.3em;
+      #footer p {
+        line-height: 2;
       }
 
+      #footer p .about {
+        word-spacing: 0.1em;
+      }
+
+      #footer p .terms {
+        word-spacing: 0.1em;
+      }
+
+      #footer p .privacy {
+        margin-left: 25%;
+      }
+      
       body {
         color: black;
         background-color: #fff2e2; 
@@ -295,11 +301,11 @@
       <img src="logo.png" alt="footer logo">
     	<h1>muis corner</h1>
       <p>
-        <span class="home.html">Home</span> 
-        <span class="about.html">About Us</span> 
-        <span class="services.html">Services</span>
-       	<span class="connect.html">Connect</span> 
-        <span class="booking.html">Booking</span>
+        <span class="home">Home</span> 
+        <span class="about">About Us</span> 
+        <span class="services">Services</span>
+       	<span class="connect">Connect</span> 
+        <span class="booking">Booking<br></span>
         <span class="privacy">Privacy</span>
         <span class="terms">Terms & Policy</span>
       </p>
