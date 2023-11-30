@@ -161,73 +161,90 @@
         line-height: 4vw;
       }
 
-      #footer {
-        background-color: #fcfcfc;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        adding: 20px;
-  			box-sizing: border-box
-      }
+ #footer {
+  background-color: #fcfcfc;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; 
+  box-sizing: border-box;
+}
 
-      #footer img {
-        width: 55px;
-        height: 50px;
-        margin-top: 50px;
-      }
+#footer img {
+  width: 55px;
+  height: 50px;
+  margin-top: 50px;
+}
 
-      #footer h1 {
-        color: black;
-        font-size: 5vw;
-        font-family: "Nanum Pen Script";
-        margin-top: 1vh;
-        margin-left: 1vw; 
-      }
+#footer h1 {
+  color: black;
+  font-size: 5vw;
+  font-family: "Nanum Pen Script";
+  margin-top: 1.5vh;
+  margin-left: 1vw;
+}
 
-      #footer p span{
-        color: black;
-        font-size: 3vw;
-        font-family: "Big Caslon Medium";
-        white-space: nowrap;
-        text-align: center;
-        word-spacing: 2vw;
-        margin-right: 3vw;
-      }
-      
-      #footer p {
-        line-height: 2;
-      }
+#footer p span {
+  color: black;
+  font-size: 3vw;
+  font-family: "Big Caslon Medium";
+  white-space: nowrap;
+  text-align: center;
+  word-spacing: 2vw;
+  margin-right: 3vw;
+}
 
-      #footer p .about {
-        word-spacing: 0.1em;
-      }
+#footer p {
+  line-height: 2;
+}
 
-      #footer p .terms {
-        word-spacing: 0.1em;
-      }
+#footer p .about {
+  word-spacing: 0.1em;
+}
 
-      #footer p .privacy {
-        margin-left: 25%;
-      }
-      
-      #footer p1 span{
-        color: black;
-        font-size: 2vw;
-        font-family: "Avenir";
-        white-space: nowrap;
-        flex-direction: row; 
-      }
-      
-      #footer p1 {
-        margin-left: -60vw;
-      }
-     
-      #footer p1 .subscribe {
-        margin-left: 50px;
-      }
-      
+#footer p .terms {
+  word-spacing: 0.1em;
+}
+
+#footer p .privacy {
+  margin-left: 25%;
+}
+
+#footer p1 span {
+  color: black;
+  font-size: 3vw; /* Adjusted font size to match the footer */
+  font-family: "Avenir";
+  white-space: nowrap;
+  flex-direction: row;
+  z-index: 2;
+    margin-right: 3vw;
+}
+
+#subcontainer {
+  background-color: #96C5F7;
+  border-radius: 30px;
+  width: 400px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-left: -60vw; /* Adjust this value as needed */
+}
+
+#footer p1 {
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 2; /* Ensure the text is on top of the container */
+}
+
+#footer p1 .subscribe {
+  margin-left: 30px;
+}
+
       body {
         color: black;
         background-color: #fff2e2; 
@@ -327,10 +344,12 @@
         <span class="privacy">Privacy</span>
         <span class="terms">Terms & Policy</span>
       </p>
+      <div id="subcontainer">
       <p1>
       	<span class="enter">Enter Your Email</span>
         <span class="subscribe">Subscribe!</span>
       </p1>
+      </div>
   </div>
   </body>
 </html>
